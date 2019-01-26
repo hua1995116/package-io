@@ -5,7 +5,7 @@
   "scripts": {
     "build": "tsc && npm run update",
     "update": "auto-vers -t",
-    "doc": "typedoc --out ./ --theme markdown"
+    "doc": "typedoc --out doc --theme markdown"
   },
   "repository": {
     "type": "git",

@@ -2,9 +2,8 @@ import * as path from "path";
 import * as fs from "fs";
 import * as os from "os";
 /**
- * @export
  * @desc return pkg context
- * @param {string} [url]
+ * @param {string} [url] package.json path
  * @returns {Object}
  */
 export function pkgRead(url?: string): Object {
@@ -24,10 +23,9 @@ export function pkgRead(url?: string): Object {
 }
 
 /**
- * @export
  * @desc update your pkg
- * @param {string} url
- * @param {Object} data
+ * @param {string} url package.json path
+ * @param {Object} data cover data
  */
 export function pkgUpdate(url: string, data: Object): void {
   const pkg: string = pkgPath(url);
@@ -36,9 +34,8 @@ export function pkgUpdate(url: string, data: Object): void {
 }
 
 /**
- * @export
  * @desc get path form your workSpace
- * @param {string} [url]
+ * @param {string} [url] package.json path
  * @returns {string}
  */
 export function pkgPath(url?: string): string {
