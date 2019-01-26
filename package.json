@@ -1,0 +1,32 @@
+{
+  "name": "package-io",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc && npm run update",
+    "update": "auto-vers -t",
+    "doc": "typedoc --out ./ --theme markdown"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hua1995116/package-io.git"
+  },
+  "keywords": [
+    "package",
+    "io"
+  ],
+  "author": "hua199116 <qiufenghyf@163.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hua1995116/package-io/issues"
+  },
+  "homepage": "https://github.com/hua1995116/package-io#readme",
+  "devDependencies": {
+    "@types/node": "^10.12.18",
+    "auto-vers": "^1.0.2",
+    "typedoc": "^0.14.2",
+    "typedoc-plugin-markdown": "^1.1.25",
+    "typescript": "^3.2.4"
+  },
+  "description": ""
+}
