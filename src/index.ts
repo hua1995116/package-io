@@ -6,7 +6,7 @@ import * as os from "os";
  * @param {string} [url] package.json path
  * @returns {Object}
  */
-export function pkgRead(url?: string): Object {
+function pkgRead(url?: string): Object {
   const pkgUrl: string = pkgPath(url);
   const packageCtx: Boolean = fs.existsSync(pkgUrl);
   if (packageCtx) {
@@ -27,7 +27,7 @@ export function pkgRead(url?: string): Object {
  * @param {string} url package.json path
  * @param {Object} data cover data
  */
-export function pkgUpdate(url: string, data: Object): void {
+function pkgUpdate(url: string, data: Object): void {
   const pkg: string = pkgPath(url);
   const context: string = JSON.stringify(data, null, 2);
   fs.writeFileSync(pkg, context + os.EOL);
@@ -38,9 +38,15 @@ export function pkgUpdate(url: string, data: Object): void {
  * @param {string} [url] package.json path
  * @returns {string}
  */
-export function pkgPath(url?: string): string {
+function pkgPath(url?: string): string {
   if (url) {
     return url;
   }
   return path.join(process.cwd(), "package.json");
+}
+
+export {
+  pkgPath,
+  pkgRead,
+  pkgUpdate
 }
