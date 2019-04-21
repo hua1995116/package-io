@@ -5,7 +5,6 @@
 </p>
 
 
-
 > It's a helper for operator package.json
 
 # Usage
