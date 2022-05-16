@@ -16,10 +16,9 @@ function pkgRead(url?: string): Object {
       data = JSON.parse(file);
       return data;
     } catch (e) {
-      throw new Error("No valid package.json found");
+      return {}
     }
   }
-  throw new Error("No package.json found");
 }
 
 /**
