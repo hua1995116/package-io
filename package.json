@@ -28,7 +28,7 @@
     "auto-vers": "^1.0.2",
     "jsdoc-to-markdown": "^4.0.1",
     "typedoc": "^0.14.2",
-    "typedoc-plugin-markdown": "^1.1.25",
+    "typedoc-plugin-markdown": "^3.15.3",
     "typescript": "^3.2.4"
   },
   "description": ""
